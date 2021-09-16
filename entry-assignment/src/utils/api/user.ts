@@ -1,5 +1,8 @@
 import request from "../axios/axios";
 
+export interface Auth{
+    accessToken:string
+}
 export default {
     sign(id:string,password:string){
         return request({
