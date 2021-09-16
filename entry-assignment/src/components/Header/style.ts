@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Vector from "../../assets/image/Vector.png"
 export const HeaderDiv =styled.div`
     height: 55px;
     
@@ -33,4 +34,16 @@ export const BtnMenu = styled.button`
     font-size: 11px;
     margin-left: 35px;
 
+`
+export const LoginImage = styled.div`
+    width:70px;
+    height :25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    & div{
+        height: 17px;
+        width:17px;
+        background-image: url(${Vector});
+    }
 `
