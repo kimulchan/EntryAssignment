@@ -14,7 +14,7 @@ export default {
                 Authorization : `Bearer ${localStorage.accessToken}`
             },
             data:{
-                conetent:content,
+                content:content,
                 title:title
             }
         })
