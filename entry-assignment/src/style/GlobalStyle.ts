@@ -10,5 +10,13 @@ export const GlobalStyle=createGlobalStyle`
         border:none;
         outline:none;
     }
+    a{
+        text-decoration: none; 
+        outline: none;
+        color:black;
+    }
+    button{
+        cursor: pointer;
+    }
 `
 
