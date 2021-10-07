@@ -8,15 +8,19 @@ interface Token {
 
 export const getTokenData= ()=>{
     if(!localStorage.accessToken){
-        return "none";
+        return {
+            exp:null,
+            iat:null,
+            sub:null
+        };
     }
     const data:Token= jwtDecode(localStorage.accessToken);
     return data;
 }
 
 export const getUserName = ()=>{
-    if(getTokenData()==="none"){
-        return "none";
+    if(getTokenData().sub===null){
+        return null;
     }
     const UserName:any = getTokenData().sub;
     return UserName;

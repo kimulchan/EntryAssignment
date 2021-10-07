@@ -1,9 +1,9 @@
-import { useEffect } from "react";
+import { Dispatch, SetStateAction } from "react";
 import * as s from "./style";
 interface PaginationProps{
     postPerPage:number,
     totalPosts:number,
-    paginate:any,
+    paginate:Dispatch<SetStateAction<number>>,
     currentPage:number
 }
 

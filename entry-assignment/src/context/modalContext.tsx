@@ -1,11 +1,12 @@
 import { createContext, useContext, useReducer } from "react"
+import { Context } from "vm";
 import modalReducer from "./reducer/modalReducer"
 
 const initState = {
     isLogin:false,
     isSignUp:false
 }
-export const ModalContext:any= createContext(null);
+export const ModalContext:React.Context<any>= createContext(null);
 
 interface ModalProviderProps {
     children: React.ReactNode

@@ -1,12 +1,13 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { Context } from 'vm';
 import { ModalActionType } from '../../context/action/modalAction';
 import { ModalContext } from '../../context/modalContext';
 import * as H from './style';
 
 function Header (){
-    const ModalC:any = useContext(ModalContext);
-    
+        const ModalC:any = useContext(ModalContext);
+        
     return(
         <>
         <H.HeaderWrapper>
